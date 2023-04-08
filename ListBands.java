@@ -3,6 +3,8 @@ import java.sql.Statement;
 import java.sql.ResultSet;
 
 import javax.swing.JOptionPane;
+import javax.swing.JScrollPane;
+import javax.swing.JTextArea;
 
 public class ListBands {
     static String everyRow;
@@ -22,7 +24,10 @@ public class ListBands {
                 everyRow += String.format(row, id, name, year);
             }
 
-            JOptionPane.showMessageDialog(null, everyRow);
+            JTextArea text = new JTextArea(20, 50);
+            text.setText(everyRow);
+            JScrollPane pane = new JScrollPane(text);
+            JOptionPane.showMessageDialog(null, pane);
         } catch (SQLException e) {
             e.printStackTrace();
         }
