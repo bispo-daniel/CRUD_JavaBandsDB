@@ -17,12 +17,12 @@ https://github.com/bispo-daniel/SQL_Scripts/tree/main/BandsDB
 
 ## `Main menu`
 
-![all-text](https://github.com/bispo-daniel/CRUD_JavaBandsDB/blob/main/MainMenu.png)
+![all-text](https://github.com/bispo-daniel/CRUD_JavaBandsDB/blob/main/Screenshots/MainMenu.png)
 
 ## `List bands`
 
-![all-text](https://github.com/bispo-daniel/CRUD_JavaBandsDB/blob/main/ReadBandsPage.png)
+![all-text](https://github.com/bispo-daniel/CRUD_JavaBandsDB/blob/main/Screenshots/ReadBandsPage.png)
 
 ## `List albums`
 
-![all-text](https://github.com/bispo-daniel/CRUD_JavaBandsDB/blob/main/ReadAlbumsPage.png)
+![all-text](https://github.com/bispo-daniel/CRUD_JavaBandsDB/blob/main/Screenshots/ReadAlbumsPage.png)
