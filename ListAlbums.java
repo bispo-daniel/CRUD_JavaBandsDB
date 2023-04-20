@@ -26,9 +26,16 @@ public class ListAlbums {
             }
             
             JTextArea text = new JTextArea(20, 50);
-            text.setText(everyRow);
+                text.setText(everyRow);
+                text.setWrapStyleWord(true);
+                text.setLineWrap(true);
+                text.setEditable(false);
+                text.setFocusable(false);
+                text.setOpaque(false);
+
             JScrollPane panel = new JScrollPane(text);
             JOptionPane.showMessageDialog(null, panel);
+            
         } catch (SQLException e){
             e.printStackTrace();
         }
