@@ -18,7 +18,11 @@ public class DeleteBand {
                 JOptionPane.showMessageDialog(null, String.format(msg, bandId));
             }
         } catch (SQLException e) {
-            e.printStackTrace();
+            if(e.getErrorCode() == 1451){
+                JOptionPane.showMessageDialog(null, "You can't remove a band that still contains albums...\nIn order to remove this band, you must delete it's albums first.");
+            } else {
+                e.printStackTrace();
+            }
         }
         
         Main.menu();
