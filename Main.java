@@ -1,3 +1,5 @@
+import java.sql.SQLException;
+
 import javax.swing.JOptionPane;
 
 public class Main {
@@ -39,7 +41,7 @@ public class Main {
                     JOptionPane.showMessageDialog(null, "Type a valid option");
                     menu();
             }
-        } catch(NumberFormatException e){
+        } catch(NumberFormatException | SQLException e){
             JOptionPane.showMessageDialog(null, "Type a number next time...");
             menu();
         }
